@@ -1,5 +1,5 @@
 # fCE-polytoria
-Source of frthr's Chat Enhancements
+Source of [frthr's Chat Enhancements](https://polytoria.com/places/127127)
 
 # Details
 Provides a set of chat enhancements that Polytoria does not currently have with its chat.
