@@ -1,0 +1,245 @@
+{
+  "Version": "2.0.12",
+  "FileType": 1,
+  "Objects": [
+    {
+      "Name": "Couch Chair Blue",
+      "ClassName": "Model",
+      "ID": "b15cf797-0685-4053-b5dc-582b9687fca6",
+      "Properties": {
+        "LocalPosition": [
+          -87.5,
+          -38.5,
+          -188
+        ],
+        "LocalRotation": [
+          0,
+          -90,
+          -0
+        ],
+        "LocalSize": [
+          1,
+          1,
+          1
+        ],
+        "Tags": []
+      },
+      "Children": [
+        {
+          "Name": "Brick",
+          "ClassName": "Part",
+          "ID": "7388ed6f-63de-4b99-81c6-6acec8dfc47a",
+          "Properties": {
+            "Material": 13,
+            "Color": "61bbffff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              -1.5,
+              0,
+              0
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              1,
+              4.5,
+              5
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "Brick",
+          "ClassName": "Part",
+          "ID": "27fe7310-b39e-4fa6-b5c7-879b5599a1de",
+          "Properties": {
+            "Material": 13,
+            "Color": "61bbffff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              0.5,
+              -1,
+              -2
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              3,
+              2.5,
+              1
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "Brick",
+          "ClassName": "Part",
+          "ID": "e8bd0c54-cfe2-428f-8a31-765a7437b9cc",
+          "Properties": {
+            "Material": 13,
+            "Color": "61bbffff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "Anchored": true,
+            "CanCollide": false,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              0.5,
+              -1.5,
+              0
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              3,
+              1.5,
+              3
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "Brick",
+          "ClassName": "Part",
+          "ID": "201d3fd8-5a90-4f11-ae71-0b689b6a24d5",
+          "Properties": {
+            "Material": 13,
+            "Color": "61bbffff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              0.5,
+              -1,
+              2
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              3,
+              2.5,
+              1
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "Seat",
+          "ClassName": "Seat",
+          "ID": "5d0dff38-b645-4384-a0f3-53f0968c3b9e",
+          "Properties": {
+            "Material": 14,
+            "Color": "ffffff00",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "AngularDrag": 0.05,
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 3,
+            "LocalPosition": [
+              0.5,
+              -1.1706,
+              0
+            ],
+            "LocalRotation": [
+              0,
+              -270,
+              -0
+            ],
+            "LocalSize": [
+              2,
+              1,
+              2
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        }
+      ],
+      "LinkedModel": "d3609a96-dc85-4659-815e-d92f35309b4f",
+      "IsLinkedChild": false
+    }
+  ],
+  "NonInstanceObjects": []
+}
