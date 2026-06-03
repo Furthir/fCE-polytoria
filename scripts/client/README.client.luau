@@ -44,10 +44,10 @@
 	-----
 	
 	To put this into your own game, copy everything in 
-	ScriptService.Chat, 
-	Hidden, 
-	ServerHidden, 
-	PlayerDefaults.Chat, 
+	ScriptService.Chat,
+	Hidden,
+	ServerHidden,
+	PlayerDefaults.Chat,
 	PlayerGUI.ChatGUI
 	
 	to your own game (yeah it's a bit). Mostly everything chat related is inside of 
