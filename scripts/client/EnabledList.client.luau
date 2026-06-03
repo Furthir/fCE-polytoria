@@ -2,11 +2,12 @@ local cfg = require(ScriptService.Chat:WaitChild("Config"))
 local text: UILabel = script.Parent
 
 local features = cfg.Toggles
+local prefix = cfg.Values.cmdPrefix
 
 local descriptions = {
-	Blocking = ": !block|unblock [playername]",
-	Muting = ": !mute|unmute [playername]",
-	Whispering = ": !whisper [playername] [msg]",
+	Blocking = string.format(": %sblock|unblock [playername]", prefix),
+	Muting = string.format(": %smute|unmute [playername]", prefix),
+	Whispering = string.format(": %swhisper [playername] [msg]", prefix),
 	Proximity = string.format(": %s studs", cfg.Values.ProxRange),
 }
 
