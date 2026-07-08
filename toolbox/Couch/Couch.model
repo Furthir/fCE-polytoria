@@ -1,0 +1,952 @@
+{
+  "Version": "2.0.16",
+  "FileType": 1,
+  "Objects": [
+    {
+      "Name": "Couch",
+      "ClassName": "Model",
+      "ID": "1383548d-67a7-4342-ad9c-d889a4ef52e0",
+      "Properties": {
+        "LocalPosition": [
+          55.5,
+          4,
+          -43.75
+        ],
+        "LocalRotation": [
+          0,
+          -0,
+          -0
+        ],
+        "LocalSize": [
+          1,
+          1,
+          1
+        ],
+        "Tags": []
+      },
+      "Children": [
+        {
+          "Name": "Base",
+          "ClassName": "Part",
+          "ID": "b94860f7-e978-48e3-8b76-002b245a8e7e",
+          "Properties": {
+            "Material": 4,
+            "Color": "383838ff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "UseGravity": false,
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              0,
+              -0.75,
+              0
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              8.5,
+              0.5,
+              3.5
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "Base",
+          "ClassName": "Part",
+          "ID": "5a8d2e78-508e-414f-9fab-75989d0f11cc",
+          "Properties": {
+            "Material": 4,
+            "Color": "383838ff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "UseGravity": false,
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              0,
+              0.75,
+              1.5
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              7.5,
+              2.5,
+              0.5
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "Cushion",
+          "ClassName": "Part",
+          "ID": "5759ce4e-a73e-4286-8a60-3f350b89b98b",
+          "Properties": {
+            "Material": 4,
+            "Color": "383838ff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "UseGravity": false,
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              1.8625,
+              -0.25,
+              -0.25
+            ],
+            "LocalRotation": [
+              270.0198,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              3.675,
+              2.8998,
+              0.5
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "Cushion",
+          "ClassName": "Part",
+          "ID": "1f051f6b-365c-4a11-a4cc-a5ff137ffc94",
+          "Properties": {
+            "Material": 4,
+            "Color": "383838ff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "UseGravity": false,
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              -1.8375,
+              -0.25,
+              -0.25
+            ],
+            "LocalRotation": [
+              270.0198,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              3.675,
+              2.8998,
+              0.5
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "Cushion",
+          "ClassName": "Part",
+          "ID": "fdb3b09b-89b3-4c28-ac32-c5251867d1df",
+          "Properties": {
+            "Material": 4,
+            "Color": "383838ff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "UseGravity": false,
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              1.8625,
+              0.9369,
+              1.0994
+            ],
+            "LocalRotation": [
+              354.99997,
+              -180,
+              -180
+            ],
+            "LocalSize": [
+              3.65,
+              1.9,
+              0.5
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "Cushion",
+          "ClassName": "Part",
+          "ID": "4992c4ff-2fc3-40c3-a2af-71d1c6c41917",
+          "Properties": {
+            "Material": 4,
+            "Color": "383838ff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "UseGravity": false,
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              -1.8375,
+              0.9369,
+              1.0994
+            ],
+            "LocalRotation": [
+              354.99997,
+              -180,
+              -180
+            ],
+            "LocalSize": [
+              3.65,
+              1.9,
+              0.5
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "Side",
+          "ClassName": "Model",
+          "ID": "253a3a1e-5b19-4f2d-8ca9-d7ead6f9cf26",
+          "Properties": {
+            "LocalPosition": [
+              4,
+              0.75,
+              0
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              1,
+              1,
+              1
+            ],
+            "Tags": []
+          },
+          "Children": [
+            {
+              "Name": "Bevel",
+              "ClassName": "Part",
+              "ID": "fbe328e8-1171-412d-9599-d67afecc07f4",
+              "Properties": {
+                "Shape": 6,
+                "Material": 4,
+                "Color": "383838ff",
+                "Velocity": [
+                  -0,
+                  0,
+                  0
+                ],
+                "AngularVelocity": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "UseGravity": false,
+                "Anchored": true,
+                "CanCollide": true,
+                "CollisionLayers": 1,
+                "CollisionMask": 1,
+                "LocalPosition": [
+                  0,
+                  -0.25,
+                  -1.5
+                ],
+                "LocalRotation": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "LocalSize": [
+                  0.5,
+                  1,
+                  0.5
+                ],
+                "Tags": []
+              },
+              "Children": [],
+              "LinkedModel": null,
+              "IsLinkedChild": true
+            },
+            {
+              "Name": "Base",
+              "ClassName": "Part",
+              "ID": "e178fe5a-8660-48bd-9d34-15b244e6efe8",
+              "Properties": {
+                "Material": 4,
+                "Color": "383838ff",
+                "Velocity": [
+                  -0,
+                  0,
+                  0
+                ],
+                "AngularVelocity": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "UseGravity": false,
+                "Anchored": true,
+                "CanCollide": true,
+                "CollisionLayers": 1,
+                "CollisionMask": 1,
+                "LocalPosition": [
+                  0,
+                  0.75,
+                  1.25
+                ],
+                "LocalRotation": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "LocalSize": [
+                  0.5,
+                  1,
+                  1
+                ],
+                "Tags": []
+              },
+              "Children": [],
+              "LinkedModel": null,
+              "IsLinkedChild": true
+            },
+            {
+              "Name": "Base",
+              "ClassName": "Part",
+              "ID": "99f2afc4-ad84-476e-8576-27575de7fd01",
+              "Properties": {
+                "Material": 4,
+                "Color": "383838ff",
+                "Velocity": [
+                  -0,
+                  0,
+                  0
+                ],
+                "AngularVelocity": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "UseGravity": false,
+                "Anchored": true,
+                "CanCollide": true,
+                "CollisionLayers": 1,
+                "CollisionMask": 1,
+                "LocalPosition": [
+                  0,
+                  -0.5,
+                  0.25
+                ],
+                "LocalRotation": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "LocalSize": [
+                  0.5,
+                  1.5,
+                  3
+                ],
+                "Tags": []
+              },
+              "Children": [],
+              "LinkedModel": null,
+              "IsLinkedChild": true
+            },
+            {
+              "Name": "QuarterPipe",
+              "ClassName": "Part",
+              "ID": "dea334cc-9efa-4d9a-9361-02b3d6befeed",
+              "Properties": {
+                "Shape": 7,
+                "Material": 4,
+                "Color": "383838ff",
+                "Velocity": [
+                  -0,
+                  0,
+                  0
+                ],
+                "AngularVelocity": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "UseGravity": false,
+                "Anchored": true,
+                "CanCollide": true,
+                "CollisionLayers": 1,
+                "CollisionMask": 1,
+                "LocalPosition": [
+                  0,
+                  0.75,
+                  0.5
+                ],
+                "LocalRotation": [
+                  89.980194,
+                  -180,
+                  -0
+                ],
+                "LocalSize": [
+                  0.5,
+                  0.5,
+                  1
+                ],
+                "Tags": []
+              },
+              "Children": [],
+              "LinkedModel": null,
+              "IsLinkedChild": true
+            },
+            {
+              "Name": "Base",
+              "ClassName": "Part",
+              "ID": "b08c1196-6797-4b36-ac88-d2794d436c92",
+              "Properties": {
+                "Material": 4,
+                "Color": "383838ff",
+                "Velocity": [
+                  -0,
+                  0,
+                  0
+                ],
+                "AngularVelocity": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "UseGravity": false,
+                "Anchored": true,
+                "CanCollide": true,
+                "CollisionLayers": 1,
+                "CollisionMask": 1,
+                "LocalPosition": [
+                  0,
+                  -1,
+                  -1.5
+                ],
+                "LocalRotation": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "LocalSize": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "Tags": []
+              },
+              "Children": [],
+              "LinkedModel": null,
+              "IsLinkedChild": true
+            }
+          ],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "Side",
+          "ClassName": "Model",
+          "ID": "deea0823-9ed4-4296-8822-adf2e611e385",
+          "Properties": {
+            "LocalPosition": [
+              -4,
+              0.75,
+              0
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              1,
+              1,
+              1
+            ],
+            "Tags": []
+          },
+          "Children": [
+            {
+              "Name": "Bevel",
+              "ClassName": "Part",
+              "ID": "3f9697eb-9e25-4213-a981-641bcf6b84a1",
+              "Properties": {
+                "Shape": 6,
+                "Material": 4,
+                "Color": "383838ff",
+                "Velocity": [
+                  -0,
+                  0,
+                  0
+                ],
+                "AngularVelocity": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "UseGravity": false,
+                "Anchored": true,
+                "CanCollide": true,
+                "CollisionLayers": 1,
+                "CollisionMask": 1,
+                "LocalPosition": [
+                  0,
+                  -0.25,
+                  -1.5
+                ],
+                "LocalRotation": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "LocalSize": [
+                  0.5,
+                  1,
+                  0.5
+                ],
+                "Tags": []
+              },
+              "Children": [],
+              "LinkedModel": null,
+              "IsLinkedChild": true
+            },
+            {
+              "Name": "Base",
+              "ClassName": "Part",
+              "ID": "f5c6b96e-118b-4d79-9576-a64d8bcae05c",
+              "Properties": {
+                "Material": 4,
+                "Color": "383838ff",
+                "Velocity": [
+                  -0,
+                  0,
+                  0
+                ],
+                "AngularVelocity": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "UseGravity": false,
+                "Anchored": true,
+                "CanCollide": true,
+                "CollisionLayers": 1,
+                "CollisionMask": 1,
+                "LocalPosition": [
+                  0,
+                  0.75,
+                  1.25
+                ],
+                "LocalRotation": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "LocalSize": [
+                  0.5,
+                  1,
+                  1
+                ],
+                "Tags": []
+              },
+              "Children": [],
+              "LinkedModel": null,
+              "IsLinkedChild": true
+            },
+            {
+              "Name": "Base",
+              "ClassName": "Part",
+              "ID": "62fbb301-5322-47ba-a831-2719bf3ec5ac",
+              "Properties": {
+                "Material": 4,
+                "Color": "383838ff",
+                "Velocity": [
+                  -0,
+                  0,
+                  0
+                ],
+                "AngularVelocity": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "UseGravity": false,
+                "Anchored": true,
+                "CanCollide": true,
+                "CollisionLayers": 1,
+                "CollisionMask": 1,
+                "LocalPosition": [
+                  0,
+                  -0.5,
+                  0.25
+                ],
+                "LocalRotation": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "LocalSize": [
+                  0.5,
+                  1.5,
+                  3
+                ],
+                "Tags": []
+              },
+              "Children": [],
+              "LinkedModel": null,
+              "IsLinkedChild": true
+            },
+            {
+              "Name": "QuarterPipe",
+              "ClassName": "Part",
+              "ID": "83f877fb-2728-4361-aff2-5d9ac87b9db4",
+              "Properties": {
+                "Shape": 7,
+                "Material": 4,
+                "Color": "383838ff",
+                "Velocity": [
+                  -0,
+                  0,
+                  0
+                ],
+                "AngularVelocity": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "UseGravity": false,
+                "Anchored": true,
+                "CanCollide": true,
+                "CollisionLayers": 1,
+                "CollisionMask": 1,
+                "LocalPosition": [
+                  0,
+                  0.75,
+                  0.5
+                ],
+                "LocalRotation": [
+                  89.980194,
+                  -180,
+                  -0
+                ],
+                "LocalSize": [
+                  0.5,
+                  0.5,
+                  1
+                ],
+                "Tags": []
+              },
+              "Children": [],
+              "LinkedModel": null,
+              "IsLinkedChild": true
+            },
+            {
+              "Name": "Base",
+              "ClassName": "Part",
+              "ID": "87ae7665-378b-4ee6-a159-434fcef376b1",
+              "Properties": {
+                "Material": 4,
+                "Color": "383838ff",
+                "Velocity": [
+                  -0,
+                  0,
+                  0
+                ],
+                "AngularVelocity": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "UseGravity": false,
+                "Anchored": true,
+                "CanCollide": true,
+                "CollisionLayers": 1,
+                "CollisionMask": 1,
+                "LocalPosition": [
+                  0,
+                  -1,
+                  -1.5
+                ],
+                "LocalRotation": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "LocalSize": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "Tags": []
+              },
+              "Children": [],
+              "LinkedModel": null,
+              "IsLinkedChild": true
+            }
+          ],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "Leg",
+          "ClassName": "Part",
+          "ID": "dfaefaef-c643-40f5-8040-ca31e7e23a68",
+          "Properties": {
+            "Material": 14,
+            "Color": "552500ff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "UseGravity": false,
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              -4,
+              -1.5,
+              -1.5
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              0.5,
+              1,
+              0.5
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "Leg",
+          "ClassName": "Part",
+          "ID": "45fe9894-06f2-4277-9c2e-a1ff393a7e03",
+          "Properties": {
+            "Material": 14,
+            "Color": "552500ff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "UseGravity": false,
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              4,
+              -1.5,
+              -1.5
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              0.5,
+              1,
+              0.5
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "Leg",
+          "ClassName": "Part",
+          "ID": "5bf2278a-5ba7-4fc0-874f-652e7d1973a0",
+          "Properties": {
+            "Material": 14,
+            "Color": "552500ff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "UseGravity": false,
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              4,
+              -1.5,
+              1.5
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              0.5,
+              1,
+              0.5
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "Leg",
+          "ClassName": "Part",
+          "ID": "fcef39e4-1b1f-4d9d-be4b-8cb6544ea394",
+          "Properties": {
+            "Material": 14,
+            "Color": "552500ff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "UseGravity": false,
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              -4,
+              -1.5,
+              1.5
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              0.5,
+              1,
+              0.5
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        }
+      ],
+      "LinkedModel": "c3638669-5bcc-477b-a05d-0a5f023d3dbe",
+      "IsLinkedChild": false
+    }
+  ],
+  "NonInstanceObjects": []
+}

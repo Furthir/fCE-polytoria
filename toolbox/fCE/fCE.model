@@ -1,0 +1,1558 @@
+{
+  "Version": "2.0.16",
+  "FileType": 1,
+  "Objects": [
+    {
+      "Name": "fCE",
+      "ClassName": "Model",
+      "ID": "857bd649-d31e-4911-a5e4-d0692fede979",
+      "Properties": {
+        "LocalPosition": [
+          0,
+          3,
+          -12
+        ],
+        "LocalRotation": [
+          -0,
+          0,
+          0
+        ],
+        "LocalSize": [
+          1,
+          1,
+          1
+        ],
+        "Tags": []
+      },
+      "Children": [
+        {
+          "Name": "ScriptService",
+          "ClassName": "Folder",
+          "ID": "088587f9-cf8b-4a18-bd31-349aba0cd524",
+          "Properties": {
+            "Tags": []
+          },
+          "Children": [
+            {
+              "Name": "Chat",
+              "ClassName": "Folder",
+              "ID": "0c0dc46f-46c0-4964-833e-64a78eb8798d",
+              "Properties": {
+                "Tags": []
+              },
+              "Children": [
+                {
+                  "Name": "README",
+                  "ClassName": "ClientScript",
+                  "ID": "b2170a15-b6b4-4871-bc2a-215fa7d4e656",
+                  "Properties": {
+                    "IsEnabled": false,
+                    "LinkedScript": "74d8db4f-0d14-46af-a947-079b20c89be1",
+                    "Compatibility": false,
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "Events",
+                  "ClassName": "Folder",
+                  "ID": "9459aa3d-8a9f-498a-b9ec-08a66dd9a026",
+                  "Properties": {
+                    "Tags": []
+                  },
+                  "Children": [
+                    {
+                      "Name": "TypingIndic",
+                      "ClassName": "NetworkEvent",
+                      "ID": "2bfa6321-edd6-442f-ba77-b588f504e342",
+                      "Properties": {
+                        "Tags": []
+                      },
+                      "Children": [],
+                      "LinkedModel": null,
+                      "IsLinkedChild": true
+                    },
+                    {
+                      "Name": "ToggleProx",
+                      "ClassName": "NetworkEvent",
+                      "ID": "0274634f-b660-4290-acee-7c6b732b57a2",
+                      "Properties": {
+                        "Tags": []
+                      },
+                      "Children": [],
+                      "LinkedModel": null,
+                      "IsLinkedChild": true
+                    },
+                    {
+                      "Name": "Chatted",
+                      "ClassName": "BindableEvent",
+                      "ID": "72d1c514-82db-44c8-8f69-2ffb05c9f64c",
+                      "Properties": {
+                        "Tags": []
+                      },
+                      "Children": [],
+                      "LinkedModel": null,
+                      "IsLinkedChild": true
+                    },
+                    {
+                      "Name": "Bubble",
+                      "ClassName": "NetworkEvent",
+                      "ID": "ec9c1be8-19dd-40ef-940a-00037c45a7f4",
+                      "Properties": {
+                        "Tags": []
+                      },
+                      "Children": [],
+                      "LinkedModel": null,
+                      "IsLinkedChild": true
+                    }
+                  ],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "TypingIndicLocal",
+                  "ClassName": "ClientScript",
+                  "ID": "0373bbe7-d05d-46d9-b70d-e39cb0b97676",
+                  "Properties": {
+                    "IsEnabled": true,
+                    "LinkedScript": "1bd4be19-7705-49ce-b768-5922db62e445",
+                    "Compatibility": false,
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "TypingIndicator",
+                  "ClassName": "ServerScript",
+                  "ID": "0777fb68-08c2-4b6d-87b9-814769caa3b1",
+                  "Properties": {
+                    "IsEnabled": true,
+                    "LinkedScript": "d26174d4-d898-4a5a-a6a7-f7ec2c9d6509",
+                    "Compatibility": false,
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "ChatMain",
+                  "ClassName": "ServerScript",
+                  "ID": "d721e892-5ade-47ce-ac61-fb63bb40a864",
+                  "Properties": {
+                    "IsEnabled": true,
+                    "LinkedScript": "af847bc0-dbb9-4a36-813f-71d4d71f8fad",
+                    "Compatibility": false,
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "Config",
+                  "ClassName": "ModuleScript",
+                  "ID": "bf886d2c-4a28-4877-90c6-b8f221669e31",
+                  "Properties": {
+                    "IsEnabled": true,
+                    "LinkedScript": "5421f00c-72ae-4a39-b006-da6c4c16bb94",
+                    "Compatibility": false,
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "Commands",
+                  "ClassName": "ModuleScript",
+                  "ID": "f2528289-08e6-4dcc-b957-24e2b6725dd1",
+                  "Properties": {
+                    "IsEnabled": true,
+                    "LinkedScript": "e9228ccb-e834-442b-b4ec-035985ab8d30",
+                    "Compatibility": false,
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "BubbleLocal",
+                  "ClassName": "ClientScript",
+                  "ID": "f0525582-b822-41c4-80f6-4f35bbd59fe4",
+                  "Properties": {
+                    "IsEnabled": true,
+                    "LinkedScript": "499e4fed-084d-4606-bd68-ab9fa3e99770",
+                    "Compatibility": false,
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "Utils",
+                  "ClassName": "ModuleScript",
+                  "ID": "5cfdff43-aacd-4aac-a65c-e8b73b7c3c59",
+                  "Properties": {
+                    "IsEnabled": true,
+                    "LinkedScript": "d17e011d-96e1-4b7a-98c0-b4db7dfd28f1",
+                    "Compatibility": false,
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                }
+              ],
+              "LinkedModel": null,
+              "IsLinkedChild": true
+            }
+          ],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "Hidden",
+          "ClassName": "Folder",
+          "ID": "5769a63d-0316-4712-96b8-f76981e9728f",
+          "Properties": {
+            "Tags": []
+          },
+          "Children": [
+            {
+              "Name": "Range",
+              "ClassName": "Part",
+              "ID": "f2427b67-387a-4376-8586-2377b7203c43",
+              "Properties": {
+                "Shape": 1,
+                "Color": "ff000063",
+                "CastShadows": false,
+                "Velocity": [
+                  0,
+                  0,
+                  0
+                ],
+                "AngularVelocity": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "Anchored": true,
+                "CanCollide": false,
+                "CollisionLayers": 1,
+                "CollisionMask": 1,
+                "LocalPosition": [
+                  0,
+                  0,
+                  0
+                ],
+                "LocalRotation": [
+                  -0,
+                  0,
+                  0
+                ],
+                "LocalSize": [
+                  1,
+                  1,
+                  1
+                ],
+                "Tags": []
+              },
+              "Children": [],
+              "LinkedModel": null,
+              "IsLinkedChild": true
+            }
+          ],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "ServerHidden",
+          "ClassName": "Folder",
+          "ID": "be055cdb-8246-47d4-9d32-259929fba386",
+          "Properties": {
+            "Tags": []
+          },
+          "Children": [
+            {
+              "Name": "TypingIndic",
+              "ClassName": "Text3D",
+              "ID": "335852d0-a3b3-4d83-a0ac-08dea8019670",
+              "Properties": {
+                "Text": "[wave amp=50 freq=4.5 connected=0][pulse freq=1.4 color=\u0022#ffffff70\u0022]...",
+                "FontSize": 14,
+                "Color": "b6b6b6ff",
+                "OutlineWidth": 0,
+                "OutlineColor": "000000ff",
+                "FaceCamera": true,
+                "HorizontalAlignment": 1,
+                "VerticalAlignment": 1,
+                "FontAsset": "2ee66d85-c3cc-434b-bddc-14be782be11d",
+                "UseRichText": true,
+                "LocalPosition": [
+                  0,
+                  5,
+                  0
+                ],
+                "LocalRotation": [
+                  -0,
+                  0,
+                  0
+                ],
+                "LocalSize": [
+                  1,
+                  1,
+                  1
+                ],
+                "Tags": [
+                  "Indic"
+                ]
+              },
+              "Children": [],
+              "LinkedModel": null,
+              "IsLinkedChild": true
+            }
+          ],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "PlayerDefaults",
+          "ClassName": "Folder",
+          "ID": "24bea970-2b52-4e25-87b7-60aea34fd4a8",
+          "Properties": {
+            "Tags": []
+          },
+          "Children": [
+            {
+              "Name": "Chat",
+              "ClassName": "Model",
+              "ID": "31349e1b-0afc-4163-b4e3-eb52de273408",
+              "Properties": {
+                "LocalPosition": [
+                  0,
+                  6,
+                  0
+                ],
+                "LocalRotation": [
+                  -0,
+                  0,
+                  0
+                ],
+                "LocalSize": [
+                  1,
+                  1,
+                  1
+                ],
+                "Tags": []
+              },
+              "Children": [
+                {
+                  "Name": "Blocked",
+                  "ClassName": "Folder",
+                  "ID": "f8a58f43-ca93-4c15-8c44-163576ad910d",
+                  "Properties": {
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "Muted",
+                  "ClassName": "Folder",
+                  "ID": "988f8da2-dc2d-4d05-be79-53ab19b53183",
+                  "Properties": {
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "ProxEnabled",
+                  "ClassName": "BoolValue",
+                  "ID": "e1df4374-4417-4903-851a-19e945fed8ca",
+                  "Properties": {
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "ChatBubble",
+                  "ClassName": "VoiceBox",
+                  "ID": "e0c25331-608d-45c6-bfb0-96004547f5db",
+                  "Properties": {
+                    "Color": "ffffff00",
+                    "CastShadows": false,
+                    "Velocity": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "AngularVelocity": [
+                      0,
+                      -0,
+                      -0
+                    ],
+                    "UseGravity": false,
+                    "Anchored": true,
+                    "CanCollide": false,
+                    "CollisionLayers": 1,
+                    "CollisionMask": 1,
+                    "LocalPosition": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "LocalRotation": [
+                      -0,
+                      0,
+                      0
+                    ],
+                    "LocalSize": [
+                      1,
+                      1,
+                      1
+                    ],
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                }
+              ],
+              "LinkedModel": null,
+              "IsLinkedChild": true
+            }
+          ],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "PlayerGUI",
+          "ClassName": "Folder",
+          "ID": "4cca65ce-fa34-421d-85d2-b1e0730f4850",
+          "Properties": {
+            "Tags": []
+          },
+          "Children": [
+            {
+              "Name": "ChatGUI",
+              "ClassName": "GUI",
+              "ID": "aae3f6d7-38c2-4370-bf81-8d0ede5960ba",
+              "Properties": {
+                "Visible": true,
+                "ZIndex": 0,
+                "Tags": []
+              },
+              "Children": [
+                {
+                  "Name": "ChatButtonsContainer",
+                  "ClassName": "UIView",
+                  "ID": "d6728531-4a54-4ef2-b121-806c30915541",
+                  "Properties": {
+                    "BorderColor": "000000ff",
+                    "Color": "ffffff00",
+                    "BorderWidth": 0,
+                    "CornerRadius": 0,
+                    "PositionOffset": [
+                      -300,
+                      16
+                    ],
+                    "PositionRelative": [
+                      1,
+                      0
+                    ],
+                    "Rotation": -0,
+                    "SizeOffset": [
+                      250,
+                      48
+                    ],
+                    "SizeRelative": [
+                      0,
+                      0
+                    ],
+                    "ClipDescendants": false,
+                    "PivotPoint": [
+                      1,
+                      0
+                    ],
+                    "Scale": [
+                      1,
+                      1
+                    ],
+                    "Visible": true,
+                    "MaskMode": 0,
+                    "IgnoreMouse": true,
+                    "ZIndex": 0,
+                    "Tags": []
+                  },
+                  "Children": [
+                    {
+                      "Name": "Slide",
+                      "ClassName": "ClientScript",
+                      "ID": "7b123bd0-0996-4e6a-a38b-7e39e9dfe507",
+                      "Properties": {
+                        "IsEnabled": true,
+                        "LinkedScript": "f10415d6-a282-49a0-a5c1-1d58a9ccfc09",
+                        "Compatibility": false,
+                        "Tags": []
+                      },
+                      "Children": [],
+                      "LinkedModel": null,
+                      "IsLinkedChild": true
+                    },
+                    {
+                      "Name": "UIHLayout",
+                      "ClassName": "UIHLayout",
+                      "ID": "ce10450e-cef5-41d1-8bf4-359849134554",
+                      "Properties": {
+                        "PositionOffset": [
+                          0,
+                          0
+                        ],
+                        "PositionRelative": [
+                          0.5,
+                          0.5
+                        ],
+                        "Rotation": 0,
+                        "SizeOffset": [
+                          0,
+                          0
+                        ],
+                        "SizeRelative": [
+                          1,
+                          1
+                        ],
+                        "ClipDescendants": false,
+                        "PivotPoint": [
+                          0.5,
+                          0.5
+                        ],
+                        "Scale": [
+                          1,
+                          1
+                        ],
+                        "Visible": true,
+                        "MaskMode": 0,
+                        "IgnoreMouse": false,
+                        "ZIndex": 0,
+                        "Tags": []
+                      },
+                      "Children": [
+                        {
+                          "Name": "RangeButton",
+                          "ClassName": "UIButton",
+                          "ID": "21182f2d-f472-4056-9fb2-5474e64ab96d",
+                          "Properties": {
+                            "Text": "",
+                            "TextColor": "d9d9d9ff",
+                            "OutlineWidth": 0,
+                            "OutlineColor": "000000ff",
+                            "HorizontalAlignment": 1,
+                            "VerticalAlignment": 1,
+                            "FontSize": 20,
+                            "AutoSize": false,
+                            "MaxAutoSize": 0,
+                            "UseRichText": false,
+                            "FontAsset": "65dd92a8-fd8d-4229-9e02-833bf392f051",
+                            "TextWrapped": false,
+                            "BorderColor": "00000000",
+                            "Color": "00000064",
+                            "BorderWidth": 0,
+                            "CornerRadius": 8,
+                            "PositionOffset": [
+                              0,
+                              -0
+                            ],
+                            "PositionRelative": [
+                              0,
+                              0
+                            ],
+                            "Rotation": -0,
+                            "SizeOffset": [
+                              48,
+                              0
+                            ],
+                            "SizeRelative": [
+                              0,
+                              1
+                            ],
+                            "ClipDescendants": false,
+                            "PivotPoint": [
+                              0,
+                              0
+                            ],
+                            "Scale": [
+                              1,
+                              1
+                            ],
+                            "Visible": true,
+                            "MaskMode": 0,
+                            "IgnoreMouse": false,
+                            "ZIndex": 0,
+                            "Tags": []
+                          },
+                          "Children": [
+                            {
+                              "Name": "UIImage",
+                              "ClassName": "UIImage",
+                              "ID": "1bcb33f5-a883-4ebb-b4bd-b6966d95cace",
+                              "Properties": {
+                                "Image": "4062abe5-1247-4aa3-b44b-f46843f24f95",
+                                "TextureScale": [
+                                  1,
+                                  1
+                                ],
+                                "TextureOffset": [
+                                  0,
+                                  0
+                                ],
+                                "Color": "ffffffff",
+                                "StretchMode": 0,
+                                "FlipHorizontal": false,
+                                "FlipVertical": false,
+                                "PositionOffset": [
+                                  0,
+                                  0
+                                ],
+                                "PositionRelative": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "Rotation": 0,
+                                "SizeOffset": [
+                                  0,
+                                  0
+                                ],
+                                "SizeRelative": [
+                                  1,
+                                  1
+                                ],
+                                "ClipDescendants": false,
+                                "PivotPoint": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "Scale": [
+                                  1,
+                                  1
+                                ],
+                                "Visible": true,
+                                "MaskMode": 0,
+                                "IgnoreMouse": true,
+                                "ZIndex": 0,
+                                "Tags": []
+                              },
+                              "Children": [],
+                              "LinkedModel": null,
+                              "IsLinkedChild": true
+                            },
+                            {
+                              "Name": "ShowRange",
+                              "ClassName": "ClientScript",
+                              "ID": "3110c5bd-1f39-437f-89ff-847a7c7d883e",
+                              "Properties": {
+                                "IsEnabled": true,
+                                "LinkedScript": "6c8a8004-581e-4743-ad43-e2ef7dbf49c5",
+                                "Compatibility": false,
+                                "Tags": []
+                              },
+                              "Children": [],
+                              "LinkedModel": null,
+                              "IsLinkedChild": true
+                            }
+                          ],
+                          "LinkedModel": null,
+                          "IsLinkedChild": true
+                        },
+                        {
+                          "Name": "HelpButton",
+                          "ClassName": "UIButton",
+                          "ID": "d133351e-58c7-48e2-bdb8-4eb38f68fed3",
+                          "Properties": {
+                            "Text": "?",
+                            "TextColor": "d9d9d9ff",
+                            "OutlineWidth": 0,
+                            "OutlineColor": "000000ff",
+                            "HorizontalAlignment": 1,
+                            "VerticalAlignment": 1,
+                            "FontSize": 20,
+                            "AutoSize": false,
+                            "MaxAutoSize": 0,
+                            "UseRichText": false,
+                            "FontAsset": "c55ad225-2fc0-4464-9236-d394237030e9",
+                            "TextWrapped": false,
+                            "BorderColor": "00000000",
+                            "Color": "00000064",
+                            "BorderWidth": 0,
+                            "CornerRadius": 8,
+                            "PositionOffset": [
+                              0,
+                              -0
+                            ],
+                            "PositionRelative": [
+                              0,
+                              0
+                            ],
+                            "Rotation": -0,
+                            "SizeOffset": [
+                              48,
+                              0
+                            ],
+                            "SizeRelative": [
+                              0,
+                              1
+                            ],
+                            "ClipDescendants": false,
+                            "PivotPoint": [
+                              0,
+                              0
+                            ],
+                            "Scale": [
+                              1,
+                              1
+                            ],
+                            "Visible": true,
+                            "MaskMode": 0,
+                            "IgnoreMouse": false,
+                            "ZIndex": 0,
+                            "Tags": []
+                          },
+                          "Children": [
+                            {
+                              "Name": "ToggleInfo",
+                              "ClassName": "ClientScript",
+                              "ID": "d88b14cd-72bc-40ca-be0d-a749bcb74c9f",
+                              "Properties": {
+                                "IsEnabled": true,
+                                "LinkedScript": "d49ff470-76c8-44f4-9cb5-6697b52f8a71",
+                                "Compatibility": false,
+                                "Tags": []
+                              },
+                              "Children": [],
+                              "LinkedModel": null,
+                              "IsLinkedChild": true
+                            }
+                          ],
+                          "LinkedModel": null,
+                          "IsLinkedChild": true
+                        },
+                        {
+                          "Name": "ProxButton",
+                          "ClassName": "UIButton",
+                          "ID": "5538d0d0-c382-44e9-926f-c8c3a91e3787",
+                          "Properties": {
+                            "Text": "Prox Disabled",
+                            "TextColor": "ff2323ff",
+                            "OutlineWidth": 0,
+                            "OutlineColor": "000000ff",
+                            "HorizontalAlignment": 1,
+                            "VerticalAlignment": 1,
+                            "FontSize": 12,
+                            "AutoSize": false,
+                            "MaxAutoSize": 0,
+                            "UseRichText": false,
+                            "FontAsset": "d802dc05-3e23-4df9-826b-c6909c16917d",
+                            "TextWrapped": false,
+                            "BorderColor": "00000000",
+                            "Color": "00000064",
+                            "BorderWidth": 0,
+                            "CornerRadius": 8,
+                            "PositionOffset": [
+                              0,
+                              -0
+                            ],
+                            "PositionRelative": [
+                              1,
+                              0
+                            ],
+                            "Rotation": -0,
+                            "SizeOffset": [
+                              140,
+                              0
+                            ],
+                            "SizeRelative": [
+                              0,
+                              1
+                            ],
+                            "ClipDescendants": false,
+                            "PivotPoint": [
+                              1,
+                              0
+                            ],
+                            "Scale": [
+                              1,
+                              1
+                            ],
+                            "Visible": true,
+                            "MaskMode": 0,
+                            "IgnoreMouse": false,
+                            "ZIndex": 0,
+                            "Tags": []
+                          },
+                          "Children": [
+                            {
+                              "Name": "LocalProx",
+                              "ClassName": "ClientScript",
+                              "ID": "d6591b22-168d-4771-9965-c201197badb7",
+                              "Properties": {
+                                "IsEnabled": true,
+                                "LinkedScript": "9928f6c1-1357-4f4b-9188-32f7ab62dbad",
+                                "Compatibility": false,
+                                "Tags": []
+                              },
+                              "Children": [],
+                              "LinkedModel": null,
+                              "IsLinkedChild": true
+                            }
+                          ],
+                          "LinkedModel": null,
+                          "IsLinkedChild": true
+                        }
+                      ],
+                      "LinkedModel": null,
+                      "IsLinkedChild": true
+                    }
+                  ],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "Intro",
+                  "ClassName": "UIView",
+                  "ID": "750f37e7-dad9-4875-86b1-d8696a4d84d8",
+                  "Properties": {
+                    "BorderColor": "000000ff",
+                    "Color": "0000009c",
+                    "BorderWidth": 0,
+                    "CornerRadius": 0,
+                    "PositionOffset": [
+                      0,
+                      0
+                    ],
+                    "PositionRelative": [
+                      0.5,
+                      0.5
+                    ],
+                    "Rotation": 0,
+                    "SizeOffset": [
+                      0,
+                      0
+                    ],
+                    "SizeRelative": [
+                      0.5,
+                      0.6
+                    ],
+                    "ClipDescendants": false,
+                    "PivotPoint": [
+                      0.5,
+                      0.5
+                    ],
+                    "Scale": [
+                      1,
+                      1
+                    ],
+                    "Visible": true,
+                    "MaskMode": 0,
+                    "IgnoreMouse": false,
+                    "ZIndex": 0,
+                    "Tags": []
+                  },
+                  "Children": [
+                    {
+                      "Name": "UICorner",
+                      "ClassName": "UICorner",
+                      "ID": "e8a2309a-bbd7-49b3-9c60-5035c4b61927",
+                      "Properties": {
+                        "CornerRadius": {
+                          "Offset": 8,
+                          "Scale": 0
+                        },
+                        "TopLeftRadius": {
+                          "Offset": 8,
+                          "Scale": 0
+                        },
+                        "TopRightRadius": {
+                          "Offset": 8,
+                          "Scale": 0
+                        },
+                        "BottomLeftRadius": {
+                          "Offset": 8,
+                          "Scale": 0
+                        },
+                        "BottomRightRadius": {
+                          "Offset": 8,
+                          "Scale": 0
+                        },
+                        "Tags": []
+                      },
+                      "Children": [],
+                      "LinkedModel": null,
+                      "IsLinkedChild": true
+                    },
+                    {
+                      "Name": "UIStroke3",
+                      "ClassName": "UIStroke",
+                      "ID": "26b764a5-b906-4d94-8360-ef91cab7d162",
+                      "Properties": {
+                        "Thickness": {
+                          "Offset": 1,
+                          "Scale": 0
+                        },
+                        "Color": "58ff4aff",
+                        "Tags": []
+                      },
+                      "Children": [],
+                      "LinkedModel": null,
+                      "IsLinkedChild": true
+                    },
+                    {
+                      "Name": "UIShadow",
+                      "ClassName": "UIShadow",
+                      "ID": "982dd7ff-ac1e-44e5-9c7e-a31e0ae1a5f8",
+                      "Properties": {
+                        "Layers": [
+                          {
+                            "Color": "00000033",
+                            "Offset": [
+                              0,
+                              4
+                            ],
+                            "Radius": 8,
+                            "Spread": 0,
+                            "BlendMode": 0
+                          }
+                        ],
+                        "Tags": []
+                      },
+                      "Children": [],
+                      "LinkedModel": null,
+                      "IsLinkedChild": true
+                    },
+                    {
+                      "Name": "UIVLayout",
+                      "ClassName": "UIVLayout",
+                      "ID": "45b8260b-7432-443f-a6ce-c57304bad84d",
+                      "Properties": {
+                        "Spacing": 0,
+                        "PositionOffset": [
+                          0,
+                          0
+                        ],
+                        "PositionRelative": [
+                          0.5,
+                          0.5
+                        ],
+                        "Rotation": 0,
+                        "SizeOffset": [
+                          0,
+                          0
+                        ],
+                        "SizeRelative": [
+                          1,
+                          1
+                        ],
+                        "ClipDescendants": false,
+                        "PivotPoint": [
+                          0.5,
+                          0.5
+                        ],
+                        "Scale": [
+                          1,
+                          1
+                        ],
+                        "Visible": true,
+                        "MaskMode": 0,
+                        "IgnoreMouse": false,
+                        "ZIndex": 0,
+                        "Tags": []
+                      },
+                      "Children": [
+                        {
+                          "Name": "UIView",
+                          "ClassName": "UIView",
+                          "ID": "f94aef98-92fa-4c8a-a62e-58e29dd61800",
+                          "Properties": {
+                            "BorderColor": "000000ff",
+                            "Color": "ffffff00",
+                            "BorderWidth": 0,
+                            "CornerRadius": 0,
+                            "PositionOffset": [
+                              0,
+                              0
+                            ],
+                            "PositionRelative": [
+                              0.5,
+                              0.5
+                            ],
+                            "Rotation": 0,
+                            "SizeOffset": [
+                              0,
+                              0
+                            ],
+                            "SizeRelative": [
+                              1,
+                              0.15
+                            ],
+                            "ClipDescendants": false,
+                            "PivotPoint": [
+                              0.5,
+                              0.5
+                            ],
+                            "Scale": [
+                              1,
+                              1
+                            ],
+                            "Visible": true,
+                            "MaskMode": 0,
+                            "IgnoreMouse": false,
+                            "ZIndex": 0,
+                            "Tags": []
+                          },
+                          "Children": [
+                            {
+                              "Name": "Header",
+                              "ClassName": "UILabel",
+                              "ID": "ceb1bfdc-025e-42d6-abee-88d1ad711aa7",
+                              "Properties": {
+                                "Text": "[wave freq=3.5][rainbow  speed=1 freq=.2 sat=1 val=1]Chat Enhancements",
+                                "TextColor": "ffffffff",
+                                "OutlineWidth": 0,
+                                "OutlineColor": "000000ff",
+                                "HorizontalAlignment": 1,
+                                "VerticalAlignment": 1,
+                                "FontSize": 22,
+                                "AutoSize": true,
+                                "MaxAutoSize": 0,
+                                "UseRichText": true,
+                                "FontAsset": "a5c7ebe3-3ca0-41d4-aabc-d30dd011a6bd",
+                                "BorderColor": "000000ff",
+                                "Color": "ffffff00",
+                                "BorderWidth": 0,
+                                "CornerRadius": 0,
+                                "PositionOffset": [
+                                  0,
+                                  0
+                                ],
+                                "PositionRelative": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "Rotation": 0,
+                                "SizeOffset": [
+                                  0,
+                                  0
+                                ],
+                                "SizeRelative": [
+                                  1,
+                                  1.2
+                                ],
+                                "ClipDescendants": false,
+                                "PivotPoint": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "Scale": [
+                                  1,
+                                  1
+                                ],
+                                "Visible": true,
+                                "MaskMode": 0,
+                                "IgnoreMouse": false,
+                                "ZIndex": 0,
+                                "Tags": []
+                              },
+                              "Children": [],
+                              "LinkedModel": null,
+                              "IsLinkedChild": true
+                            }
+                          ],
+                          "LinkedModel": null,
+                          "IsLinkedChild": true
+                        },
+                        {
+                          "Name": "UIView2",
+                          "ClassName": "UIView",
+                          "ID": "868eed49-77b0-4111-a466-7e738f405456",
+                          "Properties": {
+                            "BorderColor": "000000ff",
+                            "Color": "ffffff00",
+                            "BorderWidth": 0,
+                            "CornerRadius": 0,
+                            "PositionOffset": [
+                              0,
+                              0
+                            ],
+                            "PositionRelative": [
+                              0.5,
+                              0.5
+                            ],
+                            "Rotation": 0,
+                            "SizeOffset": [
+                              0,
+                              0
+                            ],
+                            "SizeRelative": [
+                              0.95,
+                              0.25
+                            ],
+                            "ClipDescendants": false,
+                            "PivotPoint": [
+                              0.5,
+                              0.5
+                            ],
+                            "Scale": [
+                              1,
+                              1
+                            ],
+                            "Visible": true,
+                            "MaskMode": 0,
+                            "IgnoreMouse": false,
+                            "ZIndex": 0,
+                            "Tags": []
+                          },
+                          "Children": [
+                            {
+                              "Name": "Description",
+                              "ClassName": "UILabel",
+                              "ID": "3377e3d1-34c5-4a52-b26b-aa5f0808e694",
+                              "Properties": {
+                                "Text": "Welcome! This game uses frthr\u0027s chat enhancements to (hopefully) improve the chat experience.",
+                                "TextColor": "ffffffff",
+                                "OutlineWidth": 0,
+                                "OutlineColor": "000000ff",
+                                "HorizontalAlignment": 1,
+                                "VerticalAlignment": 1,
+                                "FontSize": 12,
+                                "AutoSize": true,
+                                "MaxAutoSize": 0,
+                                "UseRichText": true,
+                                "FontAsset": "ff943c60-0b51-4fa0-b589-7fcab381a714",
+                                "BorderColor": "000000ff",
+                                "Color": "ffffff00",
+                                "BorderWidth": 0,
+                                "CornerRadius": 0,
+                                "PositionOffset": [
+                                  0,
+                                  0
+                                ],
+                                "PositionRelative": [
+                                  0.5,
+                                  0
+                                ],
+                                "Rotation": 0,
+                                "SizeOffset": [
+                                  1,
+                                  1
+                                ],
+                                "SizeRelative": [
+                                  1,
+                                  1
+                                ],
+                                "ClipDescendants": false,
+                                "PivotPoint": [
+                                  0.5,
+                                  0
+                                ],
+                                "Scale": [
+                                  1,
+                                  1
+                                ],
+                                "Visible": true,
+                                "MaskMode": 0,
+                                "IgnoreMouse": false,
+                                "ZIndex": 0,
+                                "Tags": []
+                              },
+                              "Children": [],
+                              "LinkedModel": null,
+                              "IsLinkedChild": true
+                            }
+                          ],
+                          "LinkedModel": null,
+                          "IsLinkedChild": true
+                        },
+                        {
+                          "Name": "UIView4",
+                          "ClassName": "UIView",
+                          "ID": "3887f19f-2909-4102-b207-501a3169bc10",
+                          "Properties": {
+                            "BorderColor": "000000ff",
+                            "Color": "ffffff00",
+                            "BorderWidth": 0,
+                            "CornerRadius": 0,
+                            "PositionOffset": [
+                              0,
+                              0
+                            ],
+                            "PositionRelative": [
+                              0.5,
+                              0.5
+                            ],
+                            "Rotation": 0,
+                            "SizeOffset": [
+                              0,
+                              0
+                            ],
+                            "SizeRelative": [
+                              0.95,
+                              0.4
+                            ],
+                            "ClipDescendants": false,
+                            "PivotPoint": [
+                              0.5,
+                              0.5
+                            ],
+                            "Scale": [
+                              1,
+                              1
+                            ],
+                            "Visible": true,
+                            "MaskMode": 0,
+                            "IgnoreMouse": false,
+                            "ZIndex": 0,
+                            "Tags": []
+                          },
+                          "Children": [
+                            {
+                              "Name": "Enabled",
+                              "ClassName": "UILabel",
+                              "ID": "5a75c469-bc8d-4572-b0db-cb172ce6e875",
+                              "Properties": {
+                                "Text": "Enabled features:",
+                                "TextColor": "ffffffff",
+                                "OutlineWidth": 0,
+                                "OutlineColor": "000000ff",
+                                "HorizontalAlignment": 0,
+                                "VerticalAlignment": 0,
+                                "FontSize": 12,
+                                "AutoSize": true,
+                                "MaxAutoSize": 0,
+                                "UseRichText": true,
+                                "FontAsset": "799b4151-2a3f-4643-998b-b4316fc3b90e",
+                                "BorderColor": "000000ff",
+                                "Color": "ffffff00",
+                                "BorderWidth": 0,
+                                "CornerRadius": 0,
+                                "PositionOffset": [
+                                  0,
+                                  0
+                                ],
+                                "PositionRelative": [
+                                  0.5,
+                                  0
+                                ],
+                                "Rotation": 0,
+                                "SizeOffset": [
+                                  1,
+                                  1
+                                ],
+                                "SizeRelative": [
+                                  1,
+                                  1
+                                ],
+                                "ClipDescendants": false,
+                                "PivotPoint": [
+                                  0.5,
+                                  0
+                                ],
+                                "Scale": [
+                                  1,
+                                  1
+                                ],
+                                "Visible": true,
+                                "MaskMode": 0,
+                                "IgnoreMouse": false,
+                                "ZIndex": 0,
+                                "Tags": []
+                              },
+                              "Children": [
+                                {
+                                  "Name": "EnabledList",
+                                  "ClassName": "ClientScript",
+                                  "ID": "a60cb097-3c5a-43b1-a1e6-5d32fac688a5",
+                                  "Properties": {
+                                    "IsEnabled": true,
+                                    "LinkedScript": "90337150-9d65-4061-92a0-bb8a4ec382b4",
+                                    "Compatibility": false,
+                                    "Tags": []
+                                  },
+                                  "Children": [],
+                                  "LinkedModel": null,
+                                  "IsLinkedChild": true
+                                }
+                              ],
+                              "LinkedModel": null,
+                              "IsLinkedChild": true
+                            }
+                          ],
+                          "LinkedModel": null,
+                          "IsLinkedChild": true
+                        },
+                        {
+                          "Name": "UIView3",
+                          "ClassName": "UIView",
+                          "ID": "f2d2d50a-26e1-41cf-9877-ccc111c43b2c",
+                          "Properties": {
+                            "BorderColor": "000000ff",
+                            "Color": "ffffff00",
+                            "BorderWidth": 0,
+                            "CornerRadius": 0,
+                            "PositionOffset": [
+                              0,
+                              0
+                            ],
+                            "PositionRelative": [
+                              0.5,
+                              0.5
+                            ],
+                            "Rotation": 0,
+                            "SizeOffset": [
+                              0,
+                              0
+                            ],
+                            "SizeRelative": [
+                              1,
+                              0.2
+                            ],
+                            "ClipDescendants": false,
+                            "PivotPoint": [
+                              0.5,
+                              0.5
+                            ],
+                            "Scale": [
+                              1,
+                              1
+                            ],
+                            "Visible": true,
+                            "MaskMode": 0,
+                            "IgnoreMouse": false,
+                            "ZIndex": 0,
+                            "Tags": []
+                          },
+                          "Children": [
+                            {
+                              "Name": "Close",
+                              "ClassName": "UIButton",
+                              "ID": "ecca436c-db19-4b8f-849d-88e967e5ef4c",
+                              "Properties": {
+                                "Text": "that\u0027s cool ig",
+                                "TextColor": "000000ff",
+                                "OutlineWidth": 0,
+                                "OutlineColor": "000000ff",
+                                "HorizontalAlignment": 1,
+                                "VerticalAlignment": 1,
+                                "FontSize": 16,
+                                "AutoSize": false,
+                                "MaxAutoSize": 0,
+                                "UseRichText": false,
+                                "FontAsset": "0b726d19-f35e-4ffc-8dc4-866ed586d986",
+                                "BorderColor": "000000ff",
+                                "Color": "4ee342ff",
+                                "BorderWidth": 0,
+                                "CornerRadius": 4,
+                                "PositionOffset": [
+                                  0,
+                                  0
+                                ],
+                                "PositionRelative": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "Rotation": 0,
+                                "SizeOffset": [
+                                  0,
+                                  0
+                                ],
+                                "SizeRelative": [
+                                  0.4,
+                                  0.5
+                                ],
+                                "ClipDescendants": false,
+                                "PivotPoint": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "Scale": [
+                                  1,
+                                  1
+                                ],
+                                "Visible": true,
+                                "MaskMode": 0,
+                                "IgnoreMouse": false,
+                                "ZIndex": 0,
+                                "Tags": []
+                              },
+                              "Children": [
+                                {
+                                  "Name": "ToggleInfo",
+                                  "ClassName": "ClientScript",
+                                  "ID": "81dec31a-8306-497d-ba03-5087d1e59a4b",
+                                  "Properties": {
+                                    "IsEnabled": true,
+                                    "LinkedScript": "d49ff470-76c8-44f4-9cb5-6697b52f8a71",
+                                    "Compatibility": false,
+                                    "Tags": []
+                                  },
+                                  "Children": [],
+                                  "LinkedModel": null,
+                                  "IsLinkedChild": true
+                                }
+                              ],
+                              "LinkedModel": null,
+                              "IsLinkedChild": true
+                            }
+                          ],
+                          "LinkedModel": null,
+                          "IsLinkedChild": true
+                        }
+                      ],
+                      "LinkedModel": null,
+                      "IsLinkedChild": true
+                    }
+                  ],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                }
+              ],
+              "LinkedModel": null,
+              "IsLinkedChild": true
+            }
+          ],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        }
+      ],
+      "LinkedModel": "c5cf333e-e459-474e-abc7-20bc01f46380",
+      "IsLinkedChild": false
+    }
+  ],
+  "NonInstanceObjects": [
+    {
+      "Name": "BuiltInFontAsset28",
+      "ClassName": "BuiltInFontAsset",
+      "ID": "2ee66d85-c3cc-434b-bddc-14be782be11d",
+      "Properties": {
+        "FontPreset": 12,
+        "FontWeight": 7,
+        "FontStyle": 0
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    },
+    {
+      "Name": "BuiltInFontAsset29",
+      "ClassName": "BuiltInFontAsset",
+      "ID": "65dd92a8-fd8d-4229-9e02-833bf392f051",
+      "Properties": {
+        "FontPreset": 12,
+        "FontWeight": 8,
+        "FontStyle": 0
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    },
+    {
+      "Name": "PTImageAsset4",
+      "ClassName": "PTImageAsset",
+      "ID": "4062abe5-1247-4aa3-b44b-f46843f24f95",
+      "Properties": {
+        "ImageID": 35391,
+        "ImageType": 0
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    },
+    {
+      "Name": "BuiltInFontAsset30",
+      "ClassName": "BuiltInFontAsset",
+      "ID": "c55ad225-2fc0-4464-9236-d394237030e9",
+      "Properties": {
+        "FontPreset": 12,
+        "FontWeight": 8,
+        "FontStyle": 0
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    },
+    {
+      "Name": "BuiltInFontAsset31",
+      "ClassName": "BuiltInFontAsset",
+      "ID": "d802dc05-3e23-4df9-826b-c6909c16917d",
+      "Properties": {
+        "FontPreset": 12,
+        "FontWeight": 6,
+        "FontStyle": 0
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    },
+    {
+      "Name": "BuiltInFontAsset32",
+      "ClassName": "BuiltInFontAsset",
+      "ID": "a5c7ebe3-3ca0-41d4-aabc-d30dd011a6bd",
+      "Properties": {
+        "FontPreset": 12,
+        "FontWeight": 8,
+        "FontStyle": 0
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    },
+    {
+      "Name": "BuiltInFontAsset33",
+      "ClassName": "BuiltInFontAsset",
+      "ID": "ff943c60-0b51-4fa0-b589-7fcab381a714",
+      "Properties": {
+        "FontPreset": 12,
+        "FontWeight": 6,
+        "FontStyle": 0
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    },
+    {
+      "Name": "BuiltInFontAsset34",
+      "ClassName": "BuiltInFontAsset",
+      "ID": "799b4151-2a3f-4643-998b-b4316fc3b90e",
+      "Properties": {
+        "FontPreset": 12,
+        "FontWeight": 6,
+        "FontStyle": 0
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    },
+    {
+      "Name": "BuiltInFontAsset35",
+      "ClassName": "BuiltInFontAsset",
+      "ID": "0b726d19-f35e-4ffc-8dc4-866ed586d986",
+      "Properties": {
+        "FontPreset": 12,
+        "FontWeight": 6,
+        "FontStyle": 0
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    }
+  ]
+}

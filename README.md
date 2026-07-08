@@ -9,11 +9,26 @@ Provides a set of chat enhancements that Polytoria does not currently have with 
 - Blocking: Using `!block [playername]` in chat will block a player, and that player can no longer see your messages. Using `!unblock [playername]` will undo that.
 - Whispering: Using `!whisper [playername] [msg]` will whisper to a player. You and that player will be the only people who can see that message.
 - Typing Indicators: This is triggered when typing in chat and will show an indicator above the player's head.
+- /me: Using `!me [msg]` will result in the message being colored as the user's color.
 
 All features can be toggled on or off inside ScriptService.Chat.Config.
 
 # Instructions to Use
 ###### A README is additionally provided under ScriptService.Chat.README with more details.
+
+## Using the model
+
+1. Download the model from the [latest release](https://github.com/furthir/fCE-Polytoria/releases/latest/download/ChatEnhancements.ptmd)
+
+2. Import the model into your game (Menu bar > Model > Import)
+
+3. Detach the model (Right click model > Detach Model) to view its content
+
+4. Drag the instances into their respective locations
+
+4. Configure the settings in ScriptService.Chat.Config to your preference.
+
+## Using this repo
 
 1. Download this repository as a zip or clone this repo by running 
 
@@ -32,4 +47,4 @@ git clone https://github.com/Furthir/fCE-polytoria
 
 ---
 
-You are free to do whatever you want with this game, credits unnecessary. If you need any help, feel free to ping me in the Polytoria Discord or comment on the game. 
+You are free to do whatever you want with this game, credits unnecessary. If you need any help, feel free to comment on the game or on my profile's wall. 
