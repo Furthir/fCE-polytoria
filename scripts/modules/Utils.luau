@@ -5,7 +5,7 @@ local cfg = require(ScriptService.Chat:WaitChild("Config"))
 
 local RANGE = cfg.Values.ProxRange
 
--- yoinked from https://github.com/Polytoria/polytoria-game/blob/main/Polytoria/scripts/datamodel/Player.cs#L306
+-- yoinked from https://github.com/Polytoria/polytoria-game/blob/main/Polytoria/scripts/datamodel/Player.cs#L330
 Utils.Colors = {
 	"#4e9aa8", "#00a86b", "#4b3f69", "#d8ad39", "#d6c69a",
 	"#26A69A", "#7CB342", "#5C6BC0", "#FB7EFD", "#54A0FF",
@@ -23,9 +23,9 @@ function Utils.bubble(player: Player, text: string, client: Player) -- creates c
 	end
 end
 
--- yoinked from https://github.com/Polytoria/polytoria-game/blob/main/Polytoria/scripts/datamodel/Player.cs#L334
+-- yoinked from https://github.com/Polytoria/polytoria-game/blob/main/Polytoria/scripts/datamodel/Player.cs#L358
 function Utils.ChatColorFromUserID(userID): string
-	return Utils.Colors[userID % #Utils.Colors]
+	return Utils.Colors[(userID % #Utils.Colors)+1]
 end
 
 function Utils.formatmsg(player, msg): string -- formats msg to add chat color
