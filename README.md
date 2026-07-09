@@ -9,14 +9,15 @@ Provides a set of chat enhancements that Polytoria does not currently have with 
 - Blocking: Using `!block [playername]` in chat will block a player, and that player can no longer see your messages. Using `!unblock [playername]` will undo that.
 - Whispering: Using `!whisper [playername] [msg]` will whisper to a player. You and that player will be the only people who can see that message.
 - Typing Indicators: This is triggered when typing in chat and will show an indicator above the player's head.
-- /me: Using `!me [msg]` will result in the message being colored as the user's color.
+- Text Color: Using `!me [msg]` will result in the message being colored as the user's color.
+- Chat History: Newly joined players can see the messages from before they joined, up to the configured amount.
 
 All features can be toggled on or off inside ScriptService.Chat.Config.
 
 # Instructions to Use
 ###### A README is additionally provided under ScriptService.Chat.README with more details.
 
-## Using the model
+## Using the model (Recommended)
 
 1. Download the model from the [latest release](https://github.com/furthir/fCE-Polytoria/releases/latest/download/ChatEnhancements.ptmd)
 
