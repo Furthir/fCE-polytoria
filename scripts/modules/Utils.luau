@@ -2,6 +2,7 @@ local Utils = {}
 
 local bubbleev: NetworkEvent = ScriptService.Chat.Events:WaitChild("Bubble")
 local cfg = require(ScriptService.Chat:WaitChild("Config"))
+local log = require(ScriptService.Chat:WaitChild("ChatHistory"))
 
 local RANGE = cfg.Values.ProxRange
 
@@ -28,7 +29,7 @@ function Utils.ChatColorFromUserID(userID): string
 	return Utils.Colors[(userID % #Utils.Colors)+1]
 end
 
-function Utils.formatmsg(player, msg): string -- formats msg to add chat color
+function Utils.formatmsg(player: Player, msg: string): string -- formats msg to add chat color
 	local playerchatcolor = Utils.ChatColorFromUserID(player.UserID)
 	if player.Name == "Remi0" then -- pink color for remy lol, feel free to remove
 		playerchatcolor = "#fc53ff"
@@ -57,6 +58,7 @@ function Utils.handleProx(p: Player, msg: string, string: string)
 		end
 	else
 		string = "[🌍] " .. string
+		if cfg.Toggles.ChatHistory then log.Add(string) end
 		for _, target in ipairs(Players:GetPlayers()) do
 			if not target:IsA("Player") then continue end
 			-- only send to players who have not muted sender, and who are not blocked

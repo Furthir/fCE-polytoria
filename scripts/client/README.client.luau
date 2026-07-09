@@ -41,9 +41,14 @@
 		ScriptService.Chat.TypingIndicLocal (mostly modifier keys). This times out after
 		x seconds defined in ScriptService.Chat.Config and will hide the indicator.
 		
-		/me (idk how else to shortly describe this) - Using !me [msg] in chat will apply
-		the sender's user color to the entire message.
+		Text Color - Using !me [msg] in chat will apply the sender's user color 
+		to the entire message.
 		
+		Chat History - Messages sent by players will be put into a log, with a maximum of
+		the configured MaxHistLength limit. This will then be sent via UnicastMessages
+		to any new player joining the server, which allows them to see the past messages
+		before they joined the server. Only messages that are visible to all players will
+		be put into the log, so no whispers or proximity messages can be seen.
 	-----
 	
 	To put this into your own game, copy everything in (if not using model)
@@ -60,7 +65,7 @@
 	To choose what you want to use, configure the settings in ScriptService.Chat.Config.
 	
 	You can adjust the proximity chat range inside of ScriptService.Chat.Config with the
-	ProxRange variable, in studs, and the command prefix with the cmdPrefix variable. 
+	ProxRange variable, in studs, and the command prefix with cmdPrefix. 
 	
 	All commands are located in ScriptService.Chat.Commands (module), which can be used in
 	the future for UI integration (e.g. lists, UI for block/mute/whisper without commands).

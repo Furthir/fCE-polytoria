@@ -83,7 +83,7 @@ if cfg.Toggles.Whispering then
 	end
 end
 
-if cfg.Toggles.Me then
+if cfg.Toggles.TextColors then
 	cmds["me"] = function(player: Player, msg: string, rest: string)
 		msg = msg .. " " .. rest -- incredible scripting skilz
 		local playerchatcolor = utils.ChatColorFromUserID(player.UserID)

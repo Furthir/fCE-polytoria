@@ -32,7 +32,7 @@ indicev.InvokedServer:Connect(function(sender, msg)
 			cloned = indic:Clone(sender.Chat)
 		end
 		cloned = sender.Chat.TypingIndic
-		cloned.Position = sender.Position + Vector3.New(0, 5, 0)
+		cloned.Position = sender.Position + Vector3.New(0, 4.5, 0)
 		timers[sender] = 0
 	else
 		timers[sender] = 0

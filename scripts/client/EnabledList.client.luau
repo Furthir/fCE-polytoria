@@ -9,7 +9,7 @@ local descriptions = {
 	Muting = string.format(": %smute|unmute [playername]", prefix),
 	Whispering = string.format(": %swhisper [playername] [msg]", prefix),
 	Proximity = string.format(": %s studs", cfg.Values.ProxRange),
-	Me = string.format(": %sme [msg]", prefix),
+	TextColors = string.format(": %sme [msg]", prefix),
 }
 
 for i, f in pairs(features) do
