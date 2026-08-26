@@ -15,7 +15,7 @@ Config.Values = {
 	IndicTimeout = 2.5, -- idle seconds before typing indicator hides
 	ProxRange = 40, -- studs
 	cmdPrefix = "!", -- prefix for chat commands
-	MaxHistLength = 20, -- max amount of messages that is kept in chat history log
+	MaxHistLength = 25, -- max amount of messages that is kept in chat history log
 }
 
 return Config

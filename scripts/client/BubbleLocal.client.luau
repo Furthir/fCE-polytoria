@@ -1,11 +1,12 @@
 local ev: NetworkEvent = ScriptService.Chat.Events:WaitChild("Bubble")
 
 local emojis = {
-    "biglike", "cat", "catsmirk", "cobras", "cryjoy", "dead",
-    "derp", "durr", "flushed", "horrified", "like", "love", 
-	"nerd", "nervous", "neutral", "nomouth", "phantoms", "plead",
-    "polytoria", "question", "sad", "salute", "scream", "shock",
-    "smile", "sob", "sunglasses", "sweat", "troll", "yay", "yum",
+	"angry", "barf", "biglike", "bruh", "cat", "catsmirk", "cobras", "cryjoy", "dead",
+    "derp", "disgust", "dislike", "dizzy", "durr", "flushed", "freezing", "hot", "horrified", 
+	"huff", "like", "love", "nerd", "nervous", "neutral", "nomouth", "phantoms", 
+	"plead", "polytoria", "question", "sad", "salute", "scream", "shock",
+    "smile", "smirk", "sob", "starstruck", "sunglasses", "sweat", "troll", 
+	"umm", "yay", "yum",
 }
 
 local function formatemojis(msg) -- formats chat bubble msg to add emojis
