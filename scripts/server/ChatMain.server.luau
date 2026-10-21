@@ -37,7 +37,8 @@ Chat.ChatPredicate = function(p: Player, msg: string)
 	if not cfg.Toggles.Proximity then
 		local fmtmsg = utils.formatmsg(p, msg)
 		if cfg.Toggles.ChatHistory then log.Add(fmtmsg) end
-		return true
+		utils.SendToAll(p, msg, fmtmsg)
+		return false
 	end
 	
 	-- set username chat color

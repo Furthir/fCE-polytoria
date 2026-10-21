@@ -33,7 +33,7 @@
 		Blocking - Using !block [playername] in chat will block a Player, meaning the
 		Player can no longer see messages from Sender, until !unblock [playername] is run.
 	
-		Whispering - Using !whisper [playername] [msg] in chat will whisper a message to
+		Whispering - Using !w|!whisper [playername] [msg] in chat will whisper a message to
 		the Player, while no one else can see that message.
 	
 		Typing Indicators - This is done by sending the server a signal whenever a key is 
@@ -49,6 +49,20 @@
 		to any new player joining the server, which allows them to see the past messages
 		before they joined the server. Only messages that are visible to all players will
 		be put into the log, so no whispers or proximity messages can be seen.
+		
+		Pinging - If DND (the bell button) is not on and Player's name is present
+		anywhere in the message, a sound will be played and an indicator will
+		show behind the chat button.
+		
+	-----
+	
+	Updating:
+	To update the entire thing, save your Config script somewhere temporary, any script that 
+	you've changed yourself, and remove everything else. Grab the new version from Github
+	releases (https://github.com/furthir/fCE-Polytoria/releases/latest/download/ChatEnhancements.ptmd)
+	and repeat the installation steps. Then replace/merge any scripts as needed, make sure
+	to look at what has actually changed so you can safely replace it.
+	
 	-----
 	
 	To put this into your own game, copy everything in (if not using model)

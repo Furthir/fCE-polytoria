@@ -29,27 +29,54 @@ function Utils.ChatColorFromUserID(userID): string
 	return Utils.Colors[(userID % #Utils.Colors)+1]
 end
 
+function Utils.CheckIsMuted(target: Player, sender: Player): boolean
+	if not target then return false end
+	if not sender then return false end
+	if target.Chat.Muted:FindChild(sender.Name:lower()) then return true end
+	return false
+end
+
+function Utils.CheckIsBlocked(target: Player, sender: Player): boolean
+	if not target then return false end
+	if not sender then return false end
+	if sender.Chat.Blocked:FindChild(target.Name:lower()) then return true end
+	return false
+end
+
 function Utils.formatmsg(player: Player, msg: string): string -- formats msg to add chat color
 	local playerchatcolor = Utils.ChatColorFromUserID(player.UserID)
 	if player.Name == "Remi0" then -- pink color for remy lol, feel free to remove
 		playerchatcolor = "#fc53ff"
 	end
-
+	local badgepath = "res://assets/textures/client/ui/playerlist/badges/"
+	local badge = if player.IsCreator then badgepath .. "creator.png" else if player.IsAdmin then badgepath .. "admin.png" else ""
+	local badgefmt = string.format("[img=16x16]%s[/img] ", badge)
 	local color = "[color=" .. playerchatcolor .. "]"
-	local string = color .. player.Name .. "[/color]" .. ": " .. msg
+	local string = badgefmt .. color .. player.Name .. "[/color]" .. ": " .. msg
 	return string
 end
 
+function Utils.SendToAll(sender: Player, msg: string, fmtline: string)
+	for _, target in ipairs(Players:GetPlayers()) do -- target = player to send to
+		if not target:IsA("Player") then continue end
+		-- only send to players who have not muted sender, and who are not blocked
+		if not Utils.CheckIsMuted(target, sender) and not Utils.CheckIsBlocked(target, sender) then
+			Chat:UnicastMessage(fmtline, target)
+			Utils.bubble(sender, msg, target)
+		end
+	end
+end
 
 function Utils.handleProx(p: Player, msg: string, string: string)
+	-- p = sender
 	local pos = p.Position
 	if p.Chat.ProxEnabled.Value then -- if player has prox chat enabled
 		string = "[👥] " .. string
 		Chat:UnicastMessage(string, p)
-		for _, target in ipairs(Players:GetPlayers()) do
+		for _, target in ipairs(Players:GetPlayers()) do -- target = player to send to
 			if not target:IsA("Player") then continue end
 			-- check if in range and not muted and hasn't been blocked
-			if (target.Position - pos).Magnitude <= RANGE and not target.Chat.Muted:FindChild(p.Name:lower()) and not p.Chat.Blocked:FindChild(target.Name:lower()) then
+			if (target.Position - pos).Magnitude <= RANGE and not Utils.CheckIsMuted(target, p) and not Utils.CheckIsBlocked(target, p) then
 				if target ~= p then -- if target is not our own player
 					Chat:UnicastMessage(string, target) -- only send to those nearby and not muted
 				end
@@ -59,14 +86,7 @@ function Utils.handleProx(p: Player, msg: string, string: string)
 	else
 		string = "[🌍] " .. string
 		if cfg.Toggles.ChatHistory then log.Add(string) end
-		for _, target in ipairs(Players:GetPlayers()) do
-			if not target:IsA("Player") then continue end
-			-- only send to players who have not muted sender, and who are not blocked
-			if not target.Chat.Muted:FindChild(p.Name:lower()) and not p.Chat.Blocked:FindChild(target.Name:lower()) then
-				Chat:UnicastMessage(string, target)
-				Utils.bubble(p, msg, target)
-			end
-		end
+		Utils.SendToAll(p, msg, string)
 	end
 end
 

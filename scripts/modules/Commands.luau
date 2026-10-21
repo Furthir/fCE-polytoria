@@ -18,18 +18,23 @@ if cfg.Toggles.Muting then
 	cmds["mute"] = function(sender: Player, targetname: string, rest: string) -- target = to mute
 		if not sender then return end
 		local tomute = findPlayer(targetname)
-		if not tomute then 
+		if not tomute then
 			Chat:UnicastMessage("Player not found.", sender)
 			return
 		end
-		if tomute == sender then 
+		if tomute == sender then
 			Chat:UnicastMessage("you can't mute yourself bro", sender)
 			return
 		end
 		local folder = sender.Chat.Muted
-		local mutedPlayer: InstanceValue = Instance.New("InstanceValue", folder)
-		mutedPlayer.Name = targetname
-		Chat:UnicastMessage("Muted " .. tomute.Name, player)
+		if not folder:FindChild(targetname) then
+			local mutedPlayer: InstanceValue = Instance.New("InstanceValue")
+			mutedPlayer.Name = targetname
+			mutedPlayer.Parent = folder
+			Chat:UnicastMessage("Muted " .. tomute.Name, sender)
+		else
+			Chat:UnicastMessage("You've already muted " .. tomute.Name, sender)
+		end
 	end
 
 	cmds["unmute"] = function(player: Player, target: string, rest: string)
@@ -37,6 +42,8 @@ if cfg.Toggles.Muting then
 		if player.Chat.Muted:FindChild(target) then
 			player.Chat.Muted:FindChild(target):Destroy()
 			Chat:UnicastMessage("Unmuted " .. target, player)
+		else
+			Chat:UnicastMessage("They're not muted.", player)
 		end
 	end
 end
@@ -45,18 +52,23 @@ if cfg.Toggles.Blocking then
 	cmds["block"] = function(sender: Player, targetname: string, rest: string) -- target = to block
 		if not sender then return end
 		local toblock: Player = findPlayer(targetname)
-		if not toblock then 
+		if not toblock then
 			Chat:UnicastMessage("Player not found.", sender)
 			return
 		end
-		if toblock == sender then 
+		if toblock == sender then
 			Chat:UnicastMessage("you can't block yourself bro", sender)
 			return
 		end
 		local folder = sender.Chat.Blocked
-		local blockedPlayer: InstanceValue = Instance.New("InstanceValue", folder)
-		blockedPlayer.Name = targetname
-		Chat:UnicastMessage("Blocked .. " .. toblock.Name, sender)
+		if not folder:FindChild(targetname) then
+			local blockedPlayer: InstanceValue = Instance.New("InstanceValue")
+			blockedPlayer.Name = targetname
+			blockedPlayer.Parent = folder
+			Chat:UnicastMessage("Blocked " .. toblock.Name, sender)
+		else
+			Chat:UnicastMessage("You've already blocked " .. toblock.Name, sender)
+		end
 	end
 
 	cmds["unblock"] = function(player: Player, target: string, rest: string)
@@ -64,6 +76,8 @@ if cfg.Toggles.Blocking then
 		if player.Chat.Blocked:FindChild(target) then
 			player.Chat.Blocked:FindChild(target):Destroy()
 			Chat:UnicastMessage("Unblocked " .. target, player)
+		else
+			Chat:UnicastMessage("They're not blocked.", player)
 		end
 	end
 end
@@ -81,13 +95,15 @@ if cfg.Toggles.Whispering then
 			Chat:UnicastMessage(string, findPlayer(target))
 		end
 	end
+	
+	cmds["w"] = cmds["whisper"]
 end
 
 if cfg.Toggles.TextColors then
 	cmds["me"] = function(player: Player, msg: string, rest: string)
 		msg = msg .. " " .. rest -- incredible scripting skilz
 		local playerchatcolor = utils.ChatColorFromUserID(player.UserID)
-	 	if player.Name == "Remi0" then -- pink color for remy lol, feel free to remove
+	 	if player.UserID == 108584 then -- pink color for remy lol, feel free to remove
 			playerchatcolor = "#fc53ff"
 		end
 		
@@ -96,13 +112,7 @@ if cfg.Toggles.TextColors then
 		if cfg.Toggles.Proximity then
 			utils.handleProx(player, msg, string)
 		else
-			for _, target in ipairs(Players:GetPlayers()) do
-				-- only send to players who have not muted sender, and who are not blocked
-				if not target.Chat.Muted:FindChild(p.Name:lower()) and not p.Chat.Blocked:FindChild(target.Name:lower()) then
-					Chat:UnicastMessage(string, target)
-					utils.bubble(p, msg, target)
-				end
-			end
+			utils.SendToAll(player, msg, string)
 		end
 	end
 end

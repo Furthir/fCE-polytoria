@@ -7,7 +7,7 @@ local prefix = cfg.Values.cmdPrefix
 local descriptions = {
 	Blocking = string.format(": %sblock|unblock [playername]", prefix),
 	Muting = string.format(": %smute|unmute [playername]", prefix),
-	Whispering = string.format(": %swhisper [playername] [msg]", prefix),
+	Whispering = string.format(": %swhisper|%sw [playername] [msg]", prefix, prefix),
 	Proximity = string.format(": %s studs", cfg.Values.ProxRange),
 	TextColors = string.format(": %sme [msg]", prefix),
 }
