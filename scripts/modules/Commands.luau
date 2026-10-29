@@ -14,7 +14,7 @@ local function findPlayer(name) -- helper function since findchild is case sens
 	return nil
 end
 
-if cfg.Toggles.Muting then
+if cfg.Features.Muting then
 	cmds["mute"] = function(sender: Player, targetname: string, rest: string) -- target = to mute
 		if not sender then return end
 		local tomute = findPlayer(targetname)
@@ -48,7 +48,7 @@ if cfg.Toggles.Muting then
 	end
 end
 
-if cfg.Toggles.Blocking then
+if cfg.Features.Blocking then
 	cmds["block"] = function(sender: Player, targetname: string, rest: string) -- target = to block
 		if not sender then return end
 		local toblock: Player = findPlayer(targetname)
@@ -82,7 +82,7 @@ if cfg.Toggles.Blocking then
 	end
 end
 
-if cfg.Toggles.Whispering then
+if cfg.Features.Whispering then
 	cmds["whisper"] = function(player: Player, target: string, rest: string)
 		local towhisper: Player = findPlayer(target)
 		if not towhisper then
@@ -99,7 +99,7 @@ if cfg.Toggles.Whispering then
 	cmds["w"] = cmds["whisper"]
 end
 
-if cfg.Toggles.TextColors then
+if cfg.Features.TextColors then
 	cmds["me"] = function(player: Player, msg: string, rest: string)
 		msg = msg .. " " .. rest -- incredible scripting skilz
 		local playerchatcolor = utils.ChatColorFromUserID(player.UserID)
@@ -109,7 +109,7 @@ if cfg.Toggles.TextColors then
 		
 		local color = "[color=" .. playerchatcolor .. "]"
 		local string = color .. player.Name .. ": " .. msg -- make color affect entire line
-		if cfg.Toggles.Proximity then
+		if cfg.Features.Proximity then
 			utils.handleProx(player, msg, string)
 		else
 			utils.SendToAll(player, msg, string)

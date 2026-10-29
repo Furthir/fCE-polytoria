@@ -9,7 +9,7 @@ local cfg = require(ScriptService.Chat.Config)
 local curtw: TweenObject = nil
 
 chatev.InvokedClient:Connect(function(netmsg)
-	if not cfg.Toggles.Pings then return end
+	if not cfg.Features.Pings then return end
 	local msg = netmsg:GetString("msg")
 	if msg:lower():find(name) and not dnd.Value then
 		sound:PlayOneShot()

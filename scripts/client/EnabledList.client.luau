@@ -1,7 +1,7 @@
 local cfg = require(ScriptService.Chat:WaitChild("Config"))
 local text: UILabel = script.Parent
 
-local features = cfg.Toggles
+local features = cfg.Features
 local prefix = cfg.Values.cmdPrefix
 
 local descriptions = {

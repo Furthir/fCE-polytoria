@@ -11,40 +11,39 @@ Provides a set of chat enhancements that Polytoria does not currently have with 
 - Typing Indicators: This is triggered when typing in chat and will show an indicator above the player's head.
 - Text Color: Using `!me [msg]` will result in the message being colored as the user's color.
 - Chat History: Newly joined players can see the messages from before they joined, up to the configured amount.
+- Pinging: If DND (the bell button) is not on and Player's name is present anywhere in the message, a sound will be played and an indicator will show behind the chat button.
 
 All features can be toggled on or off inside ScriptService.Chat.Config.
 
 # Instructions to Use
 ###### A README is additionally provided under ScriptService.Chat.README with more details.
 
-## Using the model (Recommended)
+## Installation
 
 1. Download the model from the [latest release](https://github.com/furthir/fCE-Polytoria/releases/latest/download/ChatEnhancements.ptmd)
 
 2. Import the model into your game (Menu bar > Model > Import)
 
-3. Detach the model (Right click model > Detach Model) to view its content
+3. Detach the model (Right click model > Detach Model) to view its contents
 
 4. Drag the instances into their respective locations
 
 4. Configure the settings in ScriptService.Chat.Config to your preference.
 
-## Using this repo
 
-1. Download this repository as a zip or clone this repo by running 
+## Updating
+1. Save your Config (ScriptService.Chat.Config) script somewhere temporary, including any chat script that you've changed yourself, and remove everything else related to chat:
+ - ScriptService.Chat
+ - PlayerGUI.ChatGUI
+ - PlayerDefaults.Chat
+ - ServerHidden.TypingIndic (low prio, can usually skip)
+ - Hidden.Range & Hidden.Ping (low prio, can usually skip)
 
-```
-git clone https://github.com/Furthir/fCE-polytoria
-```
+2. Repeat the installation steps above.
 
-2. Open project in Creator
+3. Copy over your desired config settings.
 
-3. Add the files
-  - If you are starting fresh (using this as a base), you can safely delete anything in Environment and ScriptService.Unrelated.
-  
-  - If you have an existing game and want to add this, copy and merge the `scripts/` folder from this repo into your game's directory. Very important step so don't miss it or else nothing will work. In Creator, copy everything that isn't in Environment or ScriptService.Unrelated into your game. The provided README inside ScriptService.Chat will have the specific paths if you're unsure.
-
-4. Configure the settings in ScriptService.Chat.Config to your preference.
+4. Replace/merge any scripts as needed, make sure to look at what has actually changed so you can safely replace it without breaking/losing things.
 
 ---
 

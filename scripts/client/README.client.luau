@@ -1,11 +1,38 @@
 --[[
 	frthr's Chat Enhancements
 	
+	To put this into your own game, copy everything in the model to their named categories,
+	you should end with these paths:
+		ScriptService.Chat,
+		Hidden.Range, Hidden.Ping
+		ServerHidden.TypingIndic,
+		PlayerDefaults.Chat,
+		PlayerGUI.ChatGUI
+	
+	Mostly everything chat related is inside of ScriptService.Chat.ChatMain, and all visuals are
+	in their own scripts (e.g. BubbleLocal, TypingIndicLocal). Otherwise nothing else is 
+	necessary for this to work. To choose what you want to use, configure the settings in 
+	ScriptService.Chat.Config.
+	
+	All commands are located in ScriptService.Chat.Commands (module), which can be used in
+	the future for UI integration (e.g. lists, UI for block/mute/whisper without commands).
+
+	-----
+	
+	Updating:
+	To update the entire thing, save your Config script somewhere temporary, any script that 
+	you've changed yourself, and remove everything else. Grab the new version from Github
+	releases (https://github.com/furthir/fCE-Polytoria/releases/latest/download/ChatEnhancements.ptmd)
+	and repeat the installation steps. Then replace/merge any scripts as needed, make sure
+	to look at what has actually changed so you can safely replace it.
+	
+	-----
+
 	Definitions: 
 		Sender - The player who sent the message or command
 		Player(s) - The target player(s), that is not the Sender
 	
-	-----
+	
 	
 	Functionality:
 		Proximity Chat - Messages sent by players, when enabled, will only be seen by other 
@@ -56,34 +83,4 @@
 		
 	-----
 	
-	Updating:
-	To update the entire thing, save your Config script somewhere temporary, any script that 
-	you've changed yourself, and remove everything else. Grab the new version from Github
-	releases (https://github.com/furthir/fCE-Polytoria/releases/latest/download/ChatEnhancements.ptmd)
-	and repeat the installation steps. Then replace/merge any scripts as needed, make sure
-	to look at what has actually changed so you can safely replace it.
-	
-	-----
-	
-	To put this into your own game, copy everything in (if not using model)
-	ScriptService.Chat,
-	Hidden,
-	ServerHidden,
-	PlayerDefaults.Chat,
-	PlayerGUI.ChatGUI
-	
-	to your own game (yeah it's a bit). Make sure to also copy the scripts inside of your
-	file manager (`Root/scripts/*`). Mostly everything chat related is inside of 
-	ScriptService.Chat.ChatMain, and all visuals are in their own scripts 
-	(e.g. BubbleLocal, TypingIndicLocal). Otherwise nothing else is necessary for this to work.
-	To choose what you want to use, configure the settings in ScriptService.Chat.Config.
-	
-	You can adjust the proximity chat range inside of ScriptService.Chat.Config with the
-	ProxRange variable, in studs, and the command prefix with cmdPrefix. 
-	
-	All commands are located in ScriptService.Chat.Commands (module), which can be used in
-	the future for UI integration (e.g. lists, UI for block/mute/whisper without commands).
-	
-	I've tried to comment a bunch of things to explain how it works but i almost never
-	document my own code so uhhhh hopefully it makes sense. 
 ]]

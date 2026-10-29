@@ -1,8 +1,13 @@
 local Config = {}
-Config.ShowIntro = true -- show intro/help screen
-Config.ShowHelp = true -- show help button
 
 Config.Toggles = {
+	ShowIntro = true, -- show intro/help screen
+	ShowHelp = true, -- show help button
+	DefaultProxState = false, -- is proximity enabled by default on join
+	DefaultDNDState = false, -- is dnd enabled by default on join
+}
+
+Config.Features = {
 	Bubbles = true, -- use chat bubbles
 	Proximity = true, -- enables proximity chat functionality
 	TypingIndicators = true, -- show typing indicators

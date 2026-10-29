@@ -26,7 +26,7 @@ local function isBlacklisted(key)
 	return false
 end
 
-if cfg.Toggles.TypingIndicators then
+if cfg.Features.TypingIndicators then
 	Input.KeyDown:Connect(function(key)
 		if key == Enums.KeyCode.Backspace then
 			local msg = NetMessage.New()

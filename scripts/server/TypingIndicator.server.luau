@@ -20,7 +20,7 @@ end
 
 -- triggers typing indicator went received from clients
 indicev.InvokedServer:Connect(function(sender, msg)
-	if not cfg.Toggles.TypingIndicators then return end
+	if not cfg.Features.TypingIndicators then return end
 	if not sender then return end
 	if not msg.GetBool("Trigger") then -- stop signal
 		stop(sender)

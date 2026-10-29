@@ -34,9 +34,9 @@ Chat.ChatPredicate = function(p: Player, msg: string)
 			return false
 		end
 	end
-	if not cfg.Toggles.Proximity then
+	if not cfg.Features.Proximity then
 		local fmtmsg = utils.formatmsg(p, msg)
-		if cfg.Toggles.ChatHistory then log.Add(fmtmsg) end
+		if cfg.Features.ChatHistory then log.Add(fmtmsg) end
 		utils.SendToAll(p, msg, fmtmsg)
 		return false
 	end
@@ -55,7 +55,7 @@ end)
 
 Players.PlayerAdded:Connect(function(p)
 	print("Player joined: " .. p.Name)
-	if cfg.Toggles.ChatHistory then
+	if cfg.Features.ChatHistory then
 		local hist = log.Get()
 		wait(3)
 		for _, m in pairs(hist) do

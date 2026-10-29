@@ -16,7 +16,7 @@ Utils.Colors = {
 }
 
 function Utils.bubble(player: Player, text: string, client: Player) -- creates chat bubble
-	if cfg.Toggles.Bubbles then
+	if cfg.Features.Bubbles then
 		local msg = NetMessage.New()
 		msg.AddInstance("Player", player)
 		msg.AddString("msg", text)
@@ -85,7 +85,7 @@ function Utils.handleProx(p: Player, msg: string, string: string)
 		end
 	else
 		string = "[🌍] " .. string
-		if cfg.Toggles.ChatHistory then log.Add(string) end
+		if cfg.Features.ChatHistory then log.Add(string) end
 		Utils.SendToAll(p, msg, string)
 	end
 end
